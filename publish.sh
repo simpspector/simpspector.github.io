@@ -1,4 +1,5 @@
 #!/bin/bash
+# source: https://gist.github.com/mrkrstphr/2e79e55229b2ef7a343a
 
 if [ $# -ne 1 ]; then
     echo "usage: ./publish.sh \"commit message\""
