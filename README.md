@@ -1,5 +1,7 @@
 # SimpSpector Documentation
 
+http://simplethings.github.io/simpspector-docs/
+
 ## Installation for contributors
 
 ### install sculpin
