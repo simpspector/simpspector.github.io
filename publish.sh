@@ -9,7 +9,7 @@ fi
 sculpin generate --env=prod
 
 git stash
-git checkout -b gh-pages
+git checkout gh-pages
 
 cp -R output_prod/* .
 rm -rf output_*
