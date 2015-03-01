@@ -1,6 +1,6 @@
 # SimpSpector Documentation
 
-## Installation
+## Installation for contributors
 
 ### install sculpin
 
