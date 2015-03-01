@@ -1,7 +1,7 @@
 ---
 
 layout: default
-active_menu: home
+active_menu: getting_started
 
 ---
 
