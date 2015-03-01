@@ -1,0 +1,17 @@
+{
+    "name": "simplethings/simpspector-docs",
+    "description": "SimpSpector Documentation",
+    "type": "project documentation",
+    "license": "MIT",
+    "authors": [
+    ],
+    "require": {
+        "components/bootstrap": "~3.3.2",
+        "components/jquery": "~1.11.2",
+        "components/highlightjs": "~7.3.0",
+        "components/font-awesome": "~4.3.0"
+    },
+    "config": {
+        "component-dir": "source/components"
+    }
+}
