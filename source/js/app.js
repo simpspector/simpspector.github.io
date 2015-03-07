@@ -11,7 +11,7 @@ $(document).ready(function() {
             var id = "toc_entry_" + idCounter;
             var indent = (this.tagName == 'H2') ? 0 : 1;
 
-            var $li = $('<li><a href="#' + id + '">' + '&nbsp;'.repeat(indent * 4) + $(this).html() + '</a></li>');
+            var $li = $('<li><a href="#' + id + '">' + '&nbsp;'.repeat(indent * 4) + $(this).text() + '</a></li>');
             $ul.append($li);
 
             $(this).attr('id', id);
