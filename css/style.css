@@ -107,3 +107,6 @@ h1, h2, h3 {
     font-family: 'Roboto Slab', serif;
 }
 
+h2:target, h3:target {
+    text-decoration: underline;
+}

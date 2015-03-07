@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> &mdash; SimpSpector Documentation &mdash; static code analysis tool</title>
+        <title>SimpSpector Gadgets &mdash; SimpSpector Documentation &mdash; static code analysis tool</title>
         <meta charset="utf-8">
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +52,7 @@
         <a href="/configuration">Configuration</a>
     </li>
 
-                            <li  class="">
+                            <li  class="active">
         <a href="/gadgets">Gadgets</a>
     </li>
 
@@ -68,9 +68,25 @@
                     </ul>
                 </div>
                 <main class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                                            <h1 id="404---page-not-found">404 - page not found</h1>
+                                            <h1>Gadgets</h1>
 
-<p>return to the <a href="/">Homepage</a></p>
+<h2>Available Gadgets</h2>
+<h3><a href="/gadgets/gadget.function-blacklist.html">function blacklist</a></h3>
+<p>
+    <span class="label label-info">function_blacklist</span>
+    Detect unsecure, dangerous or unwanted functions/statements. Error level can be configured individually.
+</p>
+
+<h2>Config Reference</h2>
+<pre>
+# gadget: function blacklist
+some:
+    foo: bar
+other:
+    one: two
+
+
+</pre>
                                         <footer class="container">
                         &copy; 2015 SimpSpector Documentation
                     </footer>
