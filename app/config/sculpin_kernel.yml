@@ -6,6 +6,6 @@ sculpin_content_types:
         path: _gadgets
         singular_name: gadget
         layout: gadget
-        permalink: pretty
+        permalink: /gadgets/gadget.:title.html
         enabled: true
         taxonomies: []
