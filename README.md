@@ -1,8 +1,10 @@
 # SimpSpector Documentation
 
-http://simplethings.github.io/simpspector-docs/
+http://simplethings.github.io/
 
 ## Installation for contributors
+
+**Attention** development is done on branch 'sculpin', not 'master', due to github pages forcing deployment for organization/user pages being done on 'master'. Branch 'sculpin' is set as default branch, so as long as you are not actively switching master, everything should be fine.
 
 ### install sculpin
 
