@@ -1,6 +1,6 @@
 # SimpSpector Documentation
 
-http://simplethings.github.io/
+http://simpspector.github.io/
 
 ## Installation for contributors
 
