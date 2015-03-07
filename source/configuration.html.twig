@@ -1,0 +1,37 @@
+---
+
+layout: default
+title: SimpSpector Gadgets
+active_menu: configuration
+use: [gadgets]
+
+---
+
+{% block content %}
+<h1>Configuration</h1>
+
+<h2>.simpspector.yml</h2>
+
+You will need to put a configuration file `.simpspector.yml` in your projects root directory.
+
+<h2>Gadgets</h2>
+
+SimpSpector's static code analysis checks are build to be extendable und configurable. Checks are grouped in **SimpSpector Gadgets** or **gadgets** for short. You can find a list of all gadgets below, together with details on the specific configuration options all f these gadgets have (Config References).
+
+{% for gadget in data.gadgets %}
+<h3><a href="{{ gadget.url }}">{{ gadget.title }}</a></h3>
+<p>
+    {{ gadget.summary }}
+</p>
+{% endfor %}
+
+<h2>Config Reference</h2>
+<pre>
+{% for gadget in data.gadgets %}
+# gadget: {{ gadget.title }}
+{{ gadget.reference_config }}
+
+{% endfor %}
+</pre>
+{% endblock %}
+
