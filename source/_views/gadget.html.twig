@@ -1,0 +1,7 @@
+{% extends "default" %}
+
+{% block content_wrapper %}
+    <h2>Gadget: {{ page.title }}</h2>
+    {% block content %}{% endblock %}
+    <pre><code class="yml">{{ page.reference_config }}</code></pre>
+{% endblock %}

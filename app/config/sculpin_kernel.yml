@@ -1,3 +1,11 @@
 sculpin_content_types:
     posts:
         enabled: false
+    gadgets:
+        type: path
+        path: _gadgets
+        singular_name: gadget
+        layout: gadget
+        permalink: pretty
+        enabled: true
+        taxonomies: []

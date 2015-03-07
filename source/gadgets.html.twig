@@ -1,0 +1,16 @@
+---
+layout: default
+title: SimpSpector Gadgets
+use: [gadgets]
+
+---
+
+{% block content %}
+<h2>Gadgets</h2>
+{{ dump(gadgets) }}
+
+{% for gadget in gadgets %}
+    {{ gadget.title }}
+{% endfor %}
+{% endblock %}
+
