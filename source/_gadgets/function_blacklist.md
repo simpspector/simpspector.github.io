@@ -2,7 +2,7 @@
 
 title: Function Blacklist
 summary: Detect unsecure, dangerous or unwanted functions/statements. Error level can be configured individually.
-active_menu: gadgets
+active_menu: configuration
 config_key: function_blacklist
 reference_config: |
     function_blacklist:

@@ -2,7 +2,7 @@
 
 title: Security Checker
 summary: Checks for known security vulnerabilities, using sensiolabs/security-checker.
-active_menu: gadgets
+active_menu: configuration
 config_key: security-checker
 reference_config: |
     security-checker:
