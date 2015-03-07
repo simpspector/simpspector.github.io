@@ -1,4 +1,5 @@
 imports:
     - sculpin_site.yml
-url: /simpspector-docs
+
+# nothing to see here right now
 
