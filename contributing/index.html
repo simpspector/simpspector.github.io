@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Getting Started &mdash; SimpSpector Documentation &mdash; static code analysis tool</title>
+        <title>Contributing &mdash; SimpSpector Documentation &mdash; static code analysis tool</title>
         <meta charset="utf-8">
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                            <li  class="active">
+                            <li  class="">
         <a href="/">Getting Started</a>
     </li>
 
@@ -44,7 +44,7 @@
         <a href="/installation">Installation</a>
     </li>
 
-                            <li  class="">
+                            <li  class="active">
         <a href="/contributing">Contributing</a>
     </li>
 
@@ -64,36 +64,70 @@
                     </ul>
                 </div>
                 <main class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                                            <h1>SimpSpector - Getting Started</h1>
+                                            <h1>Contributing</h1>
 
-<p><a href="https://gitter.im/simplethings/SimpSpector?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join-Chat.svg" alt="Gitter" /></a>
-<a href="https://travis-ci.org/simpspector/simpspector"><img src="https://travis-ci.org/simpspector/simpspector.svg?branch=master" alt="Build Status" /></a></p>
+<p>First make sure, you have followed the <a href="/installation">installation</a> instruction, before continueing.</p>
 
-<p>What is <strong>SimpSpector</strong> all about?</p>
+<h2>Windows Development</h2>
 
-<p>Improving and analyzing code quality for php projects.</p>
+<p>Since a Linux environment is highly recomended while working on SimpSpector, using Vagrant for setting up a virtual machine under windows is a viable option.</p>
 
-<p>Features include</p>
-
-<ul>
-<li>enforce coding standards, where appropriate</li>
-<li>enable developers to configure their own rules
+<h3>Vagrant</h3>
 
 <ul>
-<li>comments that trigger warnings</li>
-<li>forbidden functions (e.g. var_dump)</li>
-<li>...</li>
-</ul></li>
-<li>support developers in fixing these issues quickly</li>
-<li>help developers to identify new issues arrising from merge requests currently under review</li>
-<li>integrate with github, gitlabs and other social open source platforms</li>
+<li>Install Vagrant</li>
+<li>Install dev environment e.g. via <code>https://github.com/DavidBadura/LAMP</code></li>
 </ul>
 
-<h2>User Guide</h2>
+<h2>Test Fixtures</h2>
 
-<h3>simpspector-analyser</h3>
+<p>TODO</p>
 
-<h2>Contributor Guide</h2>
+<h2>GitLab Docker Image</h2>
+
+<p>When developing certain aspects of SimpSpector, it will be necessary to have a working installation of gitlab.</p>
+
+<ul>
+<li>Install docker (on your vm if you are using windows)</li>
+<li>Install gitlab e.g. via <code>https://github.com/sameersbn/docker-gitlab</code></li>
+</ul>
+
+<h3>Fig Configuration</h3>
+
+<pre><code class="yaml">postgresql:
+  image: sameersbn/postgresql:9.1-1
+  environment:
+    - DB_USER=gitlab
+    - DB_PASS=secretpassword
+    - DB_NAME=gitlabhq_production
+gitlab:
+  image: sameersbn/gitlab:7.4.3
+  links:
+   - redis:redisio
+   - postgresql:postgresql
+  ports:
+   - "64001:80"
+   - "64000:22"
+  environment:
+   - GITLAB_HOST=gitlab
+redis:
+  image: sameersbn/redis:latest
+</code></pre>
+
+<h3>GitLab Standard Login</h3>
+
+<ul>
+<li>Username: root</li>
+<li>Password: 5iveL!fe</li>
+</ul>
+
+<h3>SSH Config</h3>
+
+<pre><code># ~/.ssh/config
+Host gitlab
+        HostName 127.0.0.1
+        Port 64000
+</code></pre>
                                         <footer class="container">
                         &copy; 2015 SimpSpector Documentation
                     </footer>

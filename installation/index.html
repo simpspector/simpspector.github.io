@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Getting Started &mdash; SimpSpector Documentation &mdash; static code analysis tool</title>
+        <title>contributing &mdash; SimpSpector Documentation &mdash; static code analysis tool</title>
         <meta charset="utf-8">
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,11 +36,11 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                            <li  class="active">
+                            <li  class="">
         <a href="/">Getting Started</a>
     </li>
 
-                            <li  class="">
+                            <li  class="active">
         <a href="/installation">Installation</a>
     </li>
 
@@ -64,36 +64,54 @@
                     </ul>
                 </div>
                 <main class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                                            <h1>SimpSpector - Getting Started</h1>
+                                            <h1>Installation</h1>
 
-<p><a href="https://gitter.im/simplethings/SimpSpector?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join-Chat.svg" alt="Gitter" /></a>
-<a href="https://travis-ci.org/simpspector/simpspector"><img src="https://travis-ci.org/simpspector/simpspector.svg?branch=master" alt="Build Status" /></a></p>
+<h2>Analyser</h2>
 
-<p>What is <strong>SimpSpector</strong> all about?</p>
+<p>If you just like to use SimpSpector Analyser CLI, installation is as easy as it gets.</p>
 
-<p>Improving and analyzing code quality for php projects.</p>
+<pre><code class="bash">git clone https://github.com/simpspector/analyser.git
+# start simpspecting
+analyser/bin/simpspector /path/to/your/project
+</code></pre>
 
-<p>Features include</p>
+<h2>Application</h2>
 
-<ul>
-<li>enforce coding standards, where appropriate</li>
-<li>enable developers to configure their own rules
+<h3>Clone Project</h3>
 
-<ul>
-<li>comments that trigger warnings</li>
-<li>forbidden functions (e.g. var_dump)</li>
-<li>...</li>
-</ul></li>
-<li>support developers in fixing these issues quickly</li>
-<li>help developers to identify new issues arrising from merge requests currently under review</li>
-<li>integrate with github, gitlabs and other social open source platforms</li>
-</ul>
+<pre><code class="bash">git clone https://github.com/simpspector/simpspector.git
+</code></pre>
 
-<h2>User Guide</h2>
+<h3>Composer</h3>
 
-<h3>simpspector-analyser</h3>
+<p>requires composer to be installed</p>
 
-<h2>Contributor Guide</h2>
+<pre><code class="bash">composer install # composer will ask you for required configuration paramters
+</code></pre>
+
+<h3>Assets</h3>
+
+<p>requires npm and bower to be installed</p>
+
+<pre><code class="bash">cd assets
+bower install
+npm install
+gulp styles js
+</code></pre>
+
+<h3>Initialization</h3>
+
+<pre><code class="bash">php bin/console doctrine:database:create
+php bin/console doctrine:migrations:migrate
+# in order to get semantic webfonts loaded
+cd web/css &amp;&amp; ln -s ../../assets/bower_components/semantic/dist/themes .
+</code></pre>
+
+<h2>Usage</h2>
+
+<h3>Adding .simpspector.yml</h3>
+
+<p>You will need to put a configuration file <code>.simpspector.yml</code> in your projects root directory. You can find a confoguration reference under <a href="/configuration">configuration</a></p>
                                         <footer class="container">
                         &copy; 2015 SimpSpector Documentation
                     </footer>

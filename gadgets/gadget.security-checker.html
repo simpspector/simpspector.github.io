@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Getting Started &mdash; SimpSpector Documentation &mdash; static code analysis tool</title>
+        <title>Security Checker &mdash; SimpSpector Documentation &mdash; static code analysis tool</title>
         <meta charset="utf-8">
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                            <li  class="active">
+                            <li  class="">
         <a href="/">Getting Started</a>
     </li>
 
@@ -64,37 +64,39 @@
                     </ul>
                 </div>
                 <main class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                                            <h1>SimpSpector - Getting Started</h1>
+                    <ol class="breadcrumb">
+    <li><a href="/gadgets">all gadgets</a></li>
+    <li class="active">Security Checker</li>
+</ol>
 
-<p><a href="https://gitter.im/simplethings/SimpSpector?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join-Chat.svg" alt="Gitter" /></a>
-<a href="https://travis-ci.org/simpspector/simpspector"><img src="https://travis-ci.org/simpspector/simpspector.svg?branch=master" alt="Build Status" /></a></p>
+<h1>Gadget: Security Checker</h1>
+<p>configuration key <span class="label label-info">security-checker</span></p>
+<h2>Description</h2>
+<p>This gadget checks your composer.lock if you have installed packages with security vulnerabilities.</p>
 
-<p>What is <strong>SimpSpector</strong> all about?</p>
-
-<p>Improving and analyzing code quality for php projects.</p>
-
-<p>Features include</p>
-
-<ul>
-<li>enforce coding standards, where appropriate</li>
-<li>enable developers to configure their own rules
+<h3>Parameters</h3>
 
 <ul>
-<li>comments that trigger warnings</li>
-<li>forbidden functions (e.g. var_dump)</li>
-<li>...</li>
+<li>directory
+
+<ul>
+<li>which folder contains the composer.lock, relative to the projects root folder.</li>
+<li>defaults to './'</li>
 </ul></li>
-<li>support developers in fixing these issues quickly</li>
-<li>help developers to identify new issues arrising from merge requests currently under review</li>
-<li>integrate with github, gitlabs and other social open source platforms</li>
+<li>level
+
+<ul>
+<li>error level assigned to issues created by this gadget</li>
+<li>possible values: notice, warning, error or critical</li>
+<li>default: critical</li>
+</ul></li>
 </ul>
-
-<h2>User Guide</h2>
-
-<h3>simpspector-analyser</h3>
-
-<h2>Contributor Guide</h2>
-                                        <footer class="container">
+<h2>Configuration</h2>
+<pre><code class="yml">security-checker:
+  director: ./
+  level: critical
+</code></pre>
+                    <footer class="container">
                         &copy; 2015 SimpSpector Documentation
                     </footer>
                 </main>
