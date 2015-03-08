@@ -54,6 +54,12 @@ php bin/console doctrine:migrations:migrate
 cd web/css && ln -s ../../assets/bower_components/semantic/dist/themes .
 ```
 
+### phpStorm integration
+
+* download latest version from [https://github.com/zolotov/RemoteCall/downloads](https://github.com/zolotov/RemoteCall/downloads) and place it in phpStorm plugins directory
+* open a project and test if [http://localhost:8091/?message=composer.json:11](http://localhost:8091/?message=composer.json:11) works
+
+
 ## Usage
 
 ### Adding .simpspector.yml
