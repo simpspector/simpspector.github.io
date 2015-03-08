@@ -6,7 +6,7 @@ active_menu: getting_started
 
 ---
 
-# SimpSpector - Getting Started
+# SimpSpector **alpha** - Getting Started
 
 [![Gitter](https://badges.gitter.im/Join-Chat.svg)](https://gitter.im/simplethings/SimpSpector?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/simpspector/simpspector.svg?branch=master)](https://travis-ci.org/simpspector/simpspector)
@@ -25,6 +25,17 @@ Features include
 * support developers in fixing these issues quickly
 * help developers to identify new issues arrising from merge requests currently under review
 * integrate with github, gitlabs and other social open source platforms
+
+## Not invented here
+
+What we are doing here is hardly unique. We just needed a solution that is not SaaS and would be easily extendable and also integrates with GitLab out of the box.
+
+Great things are already done in this area by
+
+* SensioLabs Insight
+* Scrutinizer
+* Code Climate
+* and many others
 
 ## User Guide
 
