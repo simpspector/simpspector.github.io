@@ -32,3 +32,9 @@ Features include
 
 ## Contributor Guide
 
+## Screenshots
+
+![Dashboard](/img/screenshots/dashboard.png)
+![Projects](/img/screenshots/project.png)
+![Commit](/img/screenshots/commit.png)
+![Commit2](/img/screenshots/commit2.png)
