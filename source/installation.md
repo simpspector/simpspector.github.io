@@ -18,7 +18,7 @@ git clone https://github.com/simpspector/analyser.git
 analyser/bin/simpspector /path/to/your/project
 ```
 
-## Application
+## Web-Application
 
 ### Clone Project
 
@@ -36,13 +36,12 @@ composer install # composer will ask you for required configuration paramters
 
 ### Assets
 
-requires npm and bower to be installed
+requires npm to be installed
 
 ```bash
-cd assets
-bower install
 npm install
-gulp styles js
+# after installation 'gulp watch' can simply be triggered by
+npm
 ```
 
 ### Initialization
@@ -58,7 +57,6 @@ cd web/css && ln -s ../../assets/bower_components/semantic/dist/themes .
 
 * download latest version from [https://github.com/zolotov/RemoteCall/downloads](https://github.com/zolotov/RemoteCall/downloads) and place it in phpStorm plugins directory
 * open a project and test if [http://localhost:8091/?message=composer.json:11](http://localhost:8091/?message=composer.json:11) works
-
 
 ## Usage
 
