@@ -39,8 +39,9 @@ composer install # composer will ask you for required configuration paramters
 requires npm to be installed
 
 ```bash
+# initial installation (download gulp, vendor libraries, ...)
 npm install
-# after installation 'gulp watch' can simply be triggered by
+# rebuilding assets as you change the sources
 npm
 ```
 
